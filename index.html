@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bootstrap 4 generator example page</title>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+     <link rel="icon" href="assets/img/icons/anger-emote.png">
+      <link rel="stylesheet" href="assets/css/app.css ">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:100,200,400,600,700,800&display=swap" rel="stylesheet">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <style>
+      h1 span.font-weight-bold{
+        font-weight:800;
+      }
+      .text-glow {
+    background-size: 200%;
+    background-image: none;
+    background-image: linear-gradient(45deg,#6504ff 0%,#ff7070 35%,#7a0aff 66%,#6504ff 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: glow 9s linear infinite;
+    animation: glow 9s linear infinite;
+}
+@-webkit-keyframes glow{0%{background-position:0% 43%;}50%{background-position:100% 58%;}100%{background-position:0% 43%;}}
+
+@keyframes glow{0%{background-position:0% 43%;}50%{background-position:100% 58%;}100%{background-position:0% 43%;}}
+      </style>
+
+
+      <!-- Plugins -->
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143393542-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143393542-1');
+      </script>
+
+    </head>
+    <body>
+      <style>
+      a.gumroad-button {
+      background-color: white !important;
+      background-image: none !important;
+      background-repeat: repeat-x !important;
+      border-radius: 4px !important;
+      box-shadow: none!important;
+      color: #5427ff !important;
+      display: flex !important;
+      font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+      font-size: 16px !important;
+      font-style: normal !important;
+      font-weight: 500 !important;
+      line-height: 50px !important;
+      padding: 0 15px !important;
+      text-shadow: none !important;
+      text-decoration: none !important;
+    }
+    .gumroad-button-logo {
+      display:none !important;
+}
+.img-logo{max-height:20px;}
+.badge-cred{ position: fixed; right: 10px; bottom:10px; top: auto; left:auto;}
+      </style>
+      <nav id="navbar-main" class="navbar navbar-light bg-transparent  navbar-expand-md fixed-top" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/icons/anger-emote.png" class="img-fluid img-logo" alt="Maker Themes Logo"> <span class="font-weight-bold">Makers</span><span class="font-weight-bold text-primary">THEMES v.1.0.</span>
+          </a>
+          <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav3">
+
+              <!--<li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>-->
+
+                <a class="font-weight-bold btn navbar-btn text-danger" target="_blank" href="https://blueprintsapp.launchaco.com/">Try DIY Generator</a>
+
+              <!--<li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>-->
+
+
+          </div>
+        </div>
+      </nav>
+      <section class="pt-5 pb-5 bg-white position-relative" style="min-height:100vh;">
+        <div class="layer-wrapper laya-vr layer-1">
+        <svg  id="animLayer1" class="scene" width="1200" height="1200" preserveAspectRatio="xMinYMid slice" viewBox="0 0 1200 1200" data-aos="fade-left" data-aos-delay="100">
+        					<defs>
+        						<linearGradient id="gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
+        							<stop stop-color="#f19872"></stop>
+        							<stop offset="1" stop-color="#e86c9a"></stop>
+        						</linearGradient>
+        						<linearGradient id="gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+        							<stop stop-color="#0947db"></stop>
+        							<stop offset="1" stop-color="#07d89d"></stop>
+        						</linearGradient>
+        						<linearGradient id="gradient-3" x1="0%" y1="0%" x2="100%" y2="100%">
+        							<stop stop-color="#ee2d29"></stop>
+        							<stop offset="1" stop-color="#f8ae2c"></stop>
+        						</linearGradient>
+        						<linearGradient id="gradient-4" x1="0%" y1="0%" x2="100%" y2="100%">
+        							<stop stop-color="#3a3d98"></stop>
+        							<stop offset="1" stop-color="#6f22b9"></stop>
+        						</linearGradient>
+        						<linearGradient id="gradient-5" x1="0%" y1="0%" x2="100%" y2="100%">
+        							<stop stop-color="#9d316e"></stop>
+        							<stop offset="1" stop-color="#de2d3e"></stop>
+        						</linearGradient>
+        						<linearGradient id="gradient-6" x1="0%" y1="0%" x2="100%" y2="100%">
+        							<stop stop-color="#00ac53"></stop>
+        							<stop offset="1" stop-color="#23c3e0"></stop>
+        						</linearGradient>
+        					</defs>
+                  <g class="blob-2">
+        						<path  fill="url(#gradient-2)" d="M 392.8,547.7 C 427.8,592.2 497.3,600.5 536.4,565.8 561.4,545.7 595.7,539.8 618,516 635.7,498.1 638.6,470.8 637.7,445.6 636.8,425 636.9,404.2 640.7,384.2 645.7,352.9 651.8,320.4 642.8,288.1 629.8,234.1 578.5,188 524,187.1 490.6,186 460.7,202.9 437.5,224.4 411.5,245.9 384.3,266.1 355.4,283.4 329.4,301.4 305.1,326.1 299.7,359.5 294.8,392.4 309.6,425.9 328.3,453.7 348.9,485.7 371.1,516.5 392.8,547.7 Z" pathdata:id="M -907.7,1516 C -413.5,1881 567.9,1950 1120,1664 1473,1499 1957,1451 2272,1255 2522,1108 2563,884.2 2550,677.2 2538,508 2539,337.1 2593,172.8 2663,-84.28 2749,-351.2 2622,-616.5 2439,-1060 1714,-1439 944.9,-1446 473.3,-1455 51.08,-1316 -276.5,-1140 -643.6,-963.2 -1028,-797.3 -1436,-655.2 -1803,-507.3 -2146,-304.4 -2222,-30.07 -2291,240.2 -2082,515.3 -1818,743.7 -1528,1007 -1214,1260 -907.7,1516 Z" style="transform-origin: 473.081px 185.66px; opacity: 1; transform: scale(2.5);"></path>
+        						<path  fill="url(#gradient-2)" d="M 340.9,428.6 C 353.4,444.4 366.9,459.6 379.5,475.4 403.4,504.3 427.7,533.6 456.8,557.3 489.9,575 531.5,568.6 556.1,543.8 577.6,531.8 603,522 614.9,498.7 630.2,460.2 616.4,415 630.3,376.1 638.9,344.4 645.6,309 632.7,275.9 618.1,227.4 561.8,193.1 515.5,207.3 484.3,217.6 466.6,247.4 441,265.8 407,291.9 363.4,305.4 336.1,339.9 317.5,364.6 321.9,402.7 340.9,428.6 Z" pathdata:id="M -1640,537.5 C -1464,667.3 -1273,792.2 -1095,921.9 -758,1159 -414.9,1400 -3.984,1595 463.4,1740 1051,1687 1398,1484 1702,1385 2060,1305 2228,1113 2444,797.1 2250,425.8 2446,106.3 2567,-154.1 2662,-444.9 2480,-716.8 2274,-1115 1479,-1397 824.9,-1280 384.3,-1196 134.4,-950.9 -227.1,-799.7 -707.2,-585.3 -1323,-474.4 -1708,-191.1 -1971,11.82 -1909,324.8 -1640,537.5 Z" style="transform-origin: 473.081px 185.66px; opacity: 1; transform: scale(2.5);"></path>
+        						<path  fill="url(#gradient-2)" d="M 364,422.9 C 394.4,463.7 427.7,505 472.9,529.1 501.3,545.1 534.9,541.5 562.1,529.8 580.3,523.3 600.7,514.7 608,495.2 616.7,457.8 605,416.3 619.9,380.5 630.8,351 639.4,318.4 631.4,285.6 625.5,259.5 608.2,233.9 582.7,223.9 556.1,212.3 523.9,216.4 504.6,236.5 471.3,263.8 439.6,294.5 399.5,312 377.2,324.8 354.4,341.5 346.9,367.9 343.9,387.1 352.3,407.1 364,422.9 Z" pathdata:id="M -1314,490.7 C -885.1,825.8 -414.9,1165 223.3,1363 624.4,1494 1099,1465 1483,1369 1740,1315 2028,1245 2131,1085 2254,777.4 2089,436.5 2299,142.4 2453,-99.89 2574,-367.7 2461,-637.1 2378,-851.5 2134,-1062 1774,-1144 1398,-1239 943.5,-1205 671,-1040 200.8,-816.1 -246.8,-564 -813.1,-420.2 -1128,-315.1 -1450,-177.9 -1556,38.93 -1598,196.6 -1480,360.9 -1314,490.7 Z" style="transform-origin: 473.081px 185.66px; opacity: 1; transform: scale(2.5);"></path>
+        						<path fill="url(#gradient-2)" d="M 408.3,450.5 C 435.7,490.6 480.5,521.6 527.9,523.4 552.1,523.7 578.3,513.4 587.8,489.9 598.4,457.4 588.6,419.1 605.1,388.6 617,358.2 631.3,326.4 626.7,291.7 625.4,265.1 603.9,241.4 579.2,233.5 562.9,227.8 545.2,230.5 531.6,239.3 489.8,262.6 459.6,301.6 417.1,323.9 399.2,335.6 380.7,351.8 378.5,375.4 377.1,402.8 393.4,428 408.3,450.5 Z" pathdata:id="M -688.8,717.4 C -301.9,1047 330.7,1301 999.9,1316 1342,1319 1712,1234 1846,1041 1995,774.1 1857,459.5 2090,209 2258,-40.75 2460,-302 2395,-587 2377,-805.5 2073,-1000 1724,-1065 1494,-1112 1244,-1090 1052,-1017 462,-826 35.55,-505.7 -564.5,-322.5 -817.3,-226.4 -1079,-93.31 -1110,100.5 -1129,325.6 -899.2,532.6 -688.8,717.4 Z" style="transform-origin: 473.081px 185.66px; opacity: 1; transform: scale(2.5);"></path>
+        						<path  fill="url(#gradient-2)" d="M 434.2,460.1 C 459.4,497.5 508.6,519.5 549.5,506.1 573.6,496.7 585.5,469.4 584.7,443.4 590.7,393.5 619.2,350 618.4,298.4 617.7,273.1 595.7,246.3 569.9,246.9 540.6,247.7 517.9,267.6 498.5,286.7 467.6,315.7 432.8,343.2 415.3,383.7 408.6,409.5 417.9,438.3 434.2,460.1 Z" pathdata:id="M -323.1,796.3 C 32.73,1103 727.4,1284 1305,1174 1645,1097 1813,872.7 1802,659.1 1887,249.2 2289,-108.1 2278,-531.9 2268,-739.8 1957,-959.9 1593,-955 1179,-948.4 858.7,-784.9 584.8,-628 148.5,-389.8 -342.9,-164 -590,168.7 -684.6,380.6 -553.3,617.2 -323.1,796.3 Z" style="transform-origin: 473.081px 185.66px; opacity: 1; transform: scale(2.5);"></path>
+        						<path  fill="url(#gradient-2)" d="M 446,458.6 C 471.3,494.2 524.6,510.3 557.7,485.8 573.8,473.9 571.9,450.1 574.8,431.1 579.9,397.6 598.7,369.4 605.6,336.4 609.8,316.6 613,294.3 604.6,274.5 597.6,258 576.8,251.3 560.8,256.8 530.7,267.1 508.3,289.4 485.9,310.3 460.7,333.8 435.9,361.7 429.7,397.7 426.2,418.5 433.3,440.8 446,458.6 Z" pathdata:id="M -156.5,783.9 C 200.8,1076 953.4,1209 1421,1007 1648,909.6 1621,714.1 1662,558.1 1734,282.9 2000,51.25 2097,-219.8 2156,-382.4 2202,-565.6 2083,-728.3 1984,-863.8 1690,-918.8 1464,-873.6 1039,-789 723.2,-605.9 406.9,-434.2 51.08,-241.2 -299.1,-12 -386.6,283.7 -436.1,454.6 -335.8,637.7 -156.5,783.9 Z" style="transform-origin: 473.081px 185.66px; opacity: 1; transform: scale(2.5);"></path>
+        						<path fill="url(#gradient-2)" d="M 451.9,456.5 C 474.7,489.7 523.3,505.1 554.4,482.8 566.2,474.4 563.5,457 562.3,443.4 557.8,394.7 589.2,351.4 580.7,303.2 578.3,289.3 558.1,289.3 547.2,293.4 503.5,310 466,342.4 444.9,384.3 434,406 437,434.8 451.9,456.5 Z" pathdata:id="M -73.17,766.7 C 248.8,1039 935,1166 1374,982.7 1541,913.7 1503,770.8 1486,659.1 1422,259.1 1866,-96.6 1745,-492.5 1712,-606.7 1426,-606.7 1272,-573 655.4,-436.7 125.9,-170.5 -172,173.6 -325.9,351.9 -283.6,588.4 -73.17,766.7 Z" style="transform-origin: 473.081px 185.66px; opacity: 1; transform: scale(2.5);"></path>
+        					</g>
+        				</svg>
+              </div>
+        <div class="container-fluid pt-5 pb-5 position-relative">
+          <div class="row d-flex justify-content-between  align-items-center">
+            <div class="col-md-5 text-center text-lg-left mb-5 mb-lg-0 order-2 order-md-1">
+              <h1 class="display-4   mt-5 mt-md-2 font-weight-light"><span  class="d-block w-100 font-weight-light" data-aos="fade-left" data-aos-delay="1000">Website Blueprints</span> <span  class="d-block w-100 font-weight-bold text-primary text-glow" data-aos="fade-right" data-aos-delay="1200">for Startups & Makers</span></h1>
+              <div class="my-4" data-aos="fade-up" data-aos-delay="1200">
+                <p class="lead  ">If your startup is in the planning of building a website, or if you’re looking for a refresh, this helps to start at some of the best examples of startup websites for cues.</p>
+              </div>
+              <!--<div class="d-flex justify-content-center justify-content-lg-start" >
+                <div class="d-flex mr-2">
+                  <i class="fas fa-star   text-warning m-1" data-aos="zoom-in" data-aos-delay="2000"></i>
+                  <i class="fas fa-star   text-warning m-1" data-aos="zoom-in" data-aos-delay="2050"></i>
+                  <i class="fas fa-star   text-warning m-1" data-aos="zoom-in" data-aos-delay="2100"></i>
+                  <i class="fas fa-star   text-warning m-1" data-aos="zoom-in" data-aos-delay="2150"></i>
+                  <i class="fas fa-star   text-muted m-1" data-aos="zoom-in" data-aos-delay="2200"></i>
+                </div>
+                <span class=" " data-aos="fade-right" data-aos-delay="1900">(Average score: 4.9/5)</span>
+              </div>-->
+              <div class=" d-flex mt-5 mb-1 justify-content-start">
+                  <p class="lead font-weight-bold">  <span class="stars ml-2">
+                        <span class="text-warning px-0"><i class="fa fa-star"></i></span>
+                        <span class="text-warning px-0"><i class="fa fa-star"></i></span>
+                        <span class="text-warning px-0"><i class="fa fa-star"></i></span>
+                        <span class="text-warning px-0"><i class="fa fa-star"></i></span>
+                        <span class="text-warning px-0"><i class="fa fa-star"></i></span>
+                      </span>
+                      <span id="value" class="text-primary font-weight-bold ml-2">2024</span> times downloaded the last month
+                    </p>
+              </div>
+              <div class="row d-flex justify-content-between  align-items-center mt-2">
+                <div class="col-md-6">
+                      <a href="#downloadAll" class="btn btn-primary  btn-block btn-lg ml-md-3 ml-md-auto mt-5" data-aos="fade-left" data-aos-delay="1500">DOWNLOAD</a>
+                </div>
+                <!--<div class="col-md-6">
+                    <a href="#" class="btn btn-outline-primary  btn-block  btn-lg ml-md-3 ml-md-auto mt-md-5 mt-3" data-aos="fade-right" data-aos-delay="1500">SIGN UP</a>
+                </div>-->
+              </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+              <div class="layer-img-wrapper laya-vr layer-2 ">
+                <img  src="assets/img/undraw_noted_pc9f.svg" alt="" class=" img-fluid d-block my-auto" data-aos="zoom-in" data-aos-delay="300">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="downloadAll" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col col-md-8 text-center mt-5">
+              <h2 class="fon-weight-bold">🦸‍ Startup Website Blueprints</h2>
+              <p class="text-h3">If you are not 100% fluent with HTML/CSS, these boilerplates will give you a set of layouts and components to get you started.
+                Make by @Bootstraptor with <3 & <a href="https://blueprintsapp.launchaco.com/" targe="_blank">Blueprints App</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-3 pb-5">
+        <div class="container">
+          <div class="row d-flex ">
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/c66e9c441fee6aeef3631e16f1373373/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%286%29.jpg" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Local Guides - Bootstrap 4 Home Booking &amp; Travel Service Landing Page </h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/KvFzfI" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download </h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/1ad758a3b9570dbff34567d0023d609b/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%286%29.png" alt="Alt text">
+
+                <div class="card-body py-3">
+                  <h5>Bootstrap v4 Cards &amp; Columns Template Inspired by NomadList project</h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/ddjn" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5   mb-3 h-100">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/fb29654243eb34f90351dc1c84efbfb1/retina/9.png" alt="Alt text">
+                <div class="position-absolute badge bg-danger lead" style="top: 3px; right:10px">NEW</div>
+                <div class="card-body py-3">
+                  <h5>AOS - Bootstrap 4 Premium Landing Page Template + SASS + GULPJS. Regular Price: $18. LIMITED TIME GET FOR $0!
+                  </h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/NaIyY" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row d-flex ">
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/5c959e0fbb601087ffeb30663a73a5c4/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%284%29.jpg" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap v.4 - Business &amp; Corporate Home Page HTML5 Template Freebie
+                  </h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/yMedZ" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download </h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/39aab9e4bdcce0bcaab9682dc2b0e4d3/retina/_D0_A1_D0_BD_D0_B8_D0_BC_D0_BE_D0_BA_20_D1_8D_D0_BA_D1_80_D0_B0_D0_BD_D0_B0_202019-01-02_20_D0_B2_2022.56.53.png" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Blueprints Freebie Sample - 6 Bootstrap v4 templates in one box</h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/blueprints-freebie" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5   mb-3 h-100">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/bfe503fd145547b8bea73fda1b887d08/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%282%29.jpg" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap 4 hero form freebie HTML5 template</h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/bootstrap4-free-template" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row d-flex ">
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/2d36a2940d6819fdc24c628b008332e6/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%285%29.jpg" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap 4 - Lead Magnet Landing Page w/ Hero Form Dark Theme
+                  </h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/iRHxf" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download </h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/e9c8782239edff09cf90cf6175cb5788/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%283%29.jpg" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap 4 HTML5 Simple App Download Landing Page Freebie</h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/ucriu" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5   mb-3 h-100">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/4f7b5ced19c8d7a4e2ea295447ef3e48/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4.png" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap 4 Modern Blog Home Page HTML5 Template Freebie - Made w/ Blueprints App
+                  </h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/gxmNU" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row d-flex ">
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/1cad683bf5a2d152fdd1b14c761b6206/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%281%29.jpg" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Blueprints freebie SaaS template Bootstrap 4</h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/dNNyq" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download </h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/735454d1192119e104bf8b3a900af97b/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%282%29.png" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap 4 free template App Landing Page with Hero Form Lead Magnet</h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/rVBcP" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5   mb-3 h-100">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/a355cdcb39e904584c62991d36b67321/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%287%29.jpg" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap 4 Simple Blog 3 column Page Freebie</h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/krMkX" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row d-flex ">
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/64b08e32c7dbf22e838d7e3cc950b9e4/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%281%29.png" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap 4 Agency App HTML5 Landing Page Template</h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/ajfES" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download </h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/ead50a30e318cd2fced8dbfa8d0ba0f7/retina/8.png" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>AOS Bootstrap 4 Freebie Landing page with animations</h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/fibKp" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5   mb-3 h-100">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/ebabc0695e316e08407e0911454a46ff/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%2810%29.jpg" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap v4 App Landing Page HTML5 Template w/slider &amp; animations effects</h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/Yhxqf" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row d-flex ">
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/2a41bef6d1b5615fbbb5a1aa97b18921/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%285%29.png" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap 4 HTML5 Website Template Landing Page With Header Form Ideal for Courses or Any Lead Generation</h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/PWtZW" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download </h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/9d57fcc6a645a751c4ff5faf8796e538/retina/Get_20it_20here__20http___bit.ly_themesclub_20%285%29.png" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap 4 freebie Personal Portfolio HTML5 Website Template</h5>
+                  <div class="mb-4">
+                  </div>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/oEzRO" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5   mb-3 h-100">
+                <img class="card-img-top" src="https://static-2.gumroad.com/res/gumroad/6305368025575/asset_previews/4491ae9e2035bc0a6449453399a0de8a/retina/BLUEPRINTS_20FREEBIE_20TEMPLATE_20BOOTSTRAP_20v4_20%283%29.png" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Bootstrap 4 Universal multi-cards template home landing page</h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://gum.co/BDKAK" class="d-flex justify-content-between align-items-center gumroad-button">
+                    <h6 class="mb-0">Download</h6>
+                    <i class="fas fa-download"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="downloadAll" class="pt-5 pb-3">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col col-md-8 text-center mt-5">
+              <h2 class="fon-weight-bold">Premium Deals & Bundles</h2>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-3 pb-5">
+        <div class="container">
+          <div class="row d-flex ">
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="assets/img/wireframekit.png" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>LAST CHANCE: All-in-One HTML5 Bootstrap 4 Wireframes Kit - only $17!</h5>
+
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://demo.bootstraptor.com/blueprints-kit/" target="_blank" class="d-flex justify-content-between align-items-center ">
+                    <h6 class="mb-0 text-danger">Get the Deal</h6>
+                    <i class="fas fa-gift text-danger"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5 h-100 mb-3 ">
+                <img class="card-img-top" src="assets/img/2.png" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5>Ultimate Bootstrap Bundle with 300 Templates + BLOCKS builder [value $1712 - today only $39! ]</h5>
+
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://bootstraptor.com/essential-bootstrap-bundle/" target="_blank" class="d-flex justify-content-between align-items-center">
+                    <h6 class="mb-0 text-danger">Get the Deal</h6>
+                    <i class="fas fa-gift text-danger"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="card mb-3 mt-5   mb-3 h-100">
+                <img class="card-img-top" src="assets/img/10.jpg" alt="Alt text">
+                <div class="card-body py-3">
+                  <h5> 100 most on-demanded <span class="badge badge-danger">BUNDLE</span> Bootstrap v4 web templates your startup ever always NEED!</h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="https://demo.bootstraptor.com/starter-kit-pro/" target="_blank"  class="d-flex justify-content-between align-items-center">
+                    <h6 class="mb-0 text-danger">Get the Deal</h6>
+                    <i class="fas fa-gift text-danger"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-5 pb-5 " style="">
+        <div class="container  pt-5 pb-5 mt-5 mb-5 ">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-5 order-2 order-md-1 mt-md-0 mt-5 pt-5 pt-md-1" >
+              <div class="svg-wrapper" data-aos="fade-in" data-aos-delay="500" >
+                  <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient id="MyGradient2">
+                      <stop stop-color="#0947db"></stop>
+                      <stop offset="1" stop-color="#07d89d"></stop>
+                    </linearGradient>
+
+                      <g transform="translate(300,300)">
+                        <path d="M95.3,-122.5C128.2,-107.2,163,-85.7,190.9,-50.2C218.7,-14.6,239.7,35,227.9,74.9C216,114.7,171.5,144.7,128.1,160.4C84.6,176.2,42.3,177.6,-7.9,188.5C-58.2,199.4,-116.4,219.9,-141.9,198.3C-167.4,176.8,-160.3,113.3,-158.4,64.4C-156.6,15.5,-160.1,-18.9,-160.9,-63.4C-161.8,-108,-159.9,-162.8,-132.7,-179.9C-105.4,-197.1,-52.7,-176.5,-10.8,-161.7C31.2,-146.9,62.3,-137.8,95.3,-122.5Z" fill="url(#MyGradient2)"></path>
+                      </g>
+                    </svg>
+                </div>
+                <div class="slider-testimonials-1 position-relative card mb-3 mt-5  " data-aos="fade-left" data-aos-delay="300">
+                  <div class="slik-item">
+                    <div class="container-fluid">
+                      <div class="row   justify-content-center d-flex  ">
+                        <div class="col-md-12    px-5 text-dark py-5">
+                          <div class="d-flex justify-content-center justify-content-lg-start">
+                            <div class="d-flex mr-2">
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                            </div>
+                          </div>
+                          <blockquote class="blockquote blockquote-reverse mt-4">
+                            <p class="lead  mt-2">"Good design is like a refrigerator—when it works, no one notices, but when it doesn’t, it sure stinks."</p>
+                            <div class="mt-3 d-flex align-items-center pt-2">
+                              <div class="mr-3">
+                                <img class="d-block img-fluid rounded-circle" src="https://via.placeholder.com/40x40/5fa9f8/ffffff " srcset="https://via.placeholder.com/120x120/5fa9f8/ffffff 2x" alt="user">
+                              </div>
+                              <div class="d-block">
+                                <p class="mb-0">–Irene Au</p>
+                                <p class="small">Designer</p>
+                              </div>
+                            </div>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slik-item">
+                    <div class="container-fluid">
+                      <div class="row   justify-content-center d-flex  ">
+                        <div class="col-md-12    px-5 text-dark py-5">
+                          <div class="d-flex justify-content-center justify-content-lg-start">
+                            <div class="d-flex mr-2">
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                            </div>
+                          </div>
+                          <blockquote class="blockquote blockquote-reverse mt-4">
+                            <p class="lead  mt-2">"Digital design is like painting, except the paint never dries."</p>
+                            <div class="mt-3 d-flex align-items-center pt-2">
+                              <div class="mr-3">
+                                <img class="d-block img-fluid rounded-circle" src="https://via.placeholder.com/40x40/5fa9f8/ffffff " srcset="https://via.placeholder.com/120x120/5fa9f8/ffffff 2x" alt="user">
+                              </div>
+                              <div class="d-block">
+                                <p class="mb-0">-Neville Brody</p>
+                                <p class="small">Designer</p>
+                              </div>
+                            </div>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slik-item">
+                    <div class="container-fluid">
+                      <div class="row   justify-content-center d-flex  ">
+                        <div class="col-md-12    px-5 text-dark py-5">
+                          <div class="d-flex justify-content-center justify-content-lg-start">
+                            <div class="d-flex mr-2">
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                              <i class="fas fa-star text-warning mr-1"></i>
+                            </div>
+                          </div>
+                          <blockquote class="blockquote blockquote-reverse mt-4">
+                            <p class="lead  mt-2">"The alternative to good design is always bad design. There is no such thing as no design."</p>
+                            <div class="mt-3 d-flex align-items-center pt-2">
+                              <div class="mr-3">
+                                <img class="d-block img-fluid rounded-circle" src="https://via.placeholder.com/40x40/5fa9f8/ffffff " srcset="https://via.placeholder.com/120x120/5fa9f8/ffffff 2x" alt="user">
+                              </div>
+                              <div class="d-block">
+                                <p class="mb-0"> –Adam Judge</p>
+                                <p class="small">Designer</p>
+                              </div>
+                            </div>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider dots navigation -->
+                  <div class="slider-nav"></div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+              <h3 class=" display-4 " ><span  class="d-block w-100" data-aos="fade-left" data-aos-delay="500">The Future of your </span> <span  class="d-block w-100" data-aos="fade-right" data-aos-delay="550">Startup is Now</span></h3>
+              <p class="lead mt-4" data-aos="fade-up" data-aos-delay="300">Templates are 100% finalized HTML/CSS pages that often look very nice.
+If you find a template that really seems like something you could use, it’s probably the best way to get you started. </p>
+              <div class="row row-grid">
+                <div class="col-3 my-1 mt-5" data-aos="zoom-in" data-aos-delay="500">
+                  <img alt="image" class="img-fluid   logo" src="assets/img/logos/ph.png">
+                </div>
+                <div class="col-3 my-1 mt-5" data-aos="fade-right" data-aos-delay="700">
+                  <img alt="image" class="img-fluid   logo" src="assets/img/logos/angel.png">
+                </div>
+                <div class="col-3 my-1 mt-5" data-aos="fade-right" data-aos-delay="900">
+                  <img alt="image" class="img-fluid   logo" src="assets/img/logos/tnw.png">
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    <!--  <section class="pt-5 pb-5 bg-dark d-flex align-items-center" style="min-height: 75vh; background-image: url(&quot;https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1506&amp;q=80&quot;); background-size: cover;">
+        <div class="container h-100">
+          <div class="row justify-content-end align-items-center">
+            <div class="col-12  col-md-7  ">
+              <h3 class="display-4 mb-3 font-weight-bold text-white">Get notified of exclusive Freebies and Deals</h3>
+              <p class="text-h3 text-white">Get Design Freebies and Deals for web professionals to your inbox.</p>
+              <form class="input-group mb-3 w-75">
+                <input type="text" class="form-control form-control-lg" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+              <p class="small text-light">Your email address is safe with us. We never share your email address.</p>
+            </div>
+          </div>
+        </div>
+        <div class=" " style=" ">
+        </div>
+      </section>-->
+
+      <section class="mb-0 mt-0">
+        <div class="footer  ">
+          <div class="   bg-dark pt-5 pb-5">
+            <div class="container">
+              <div class="row mb-5">
+                <div class="col">
+                  <div class="card mb-3 mt-5 card-body border-0 mb-0 bg-primary text-light px-md-5 py-md-4  m-shadow-32 border-0 position-relative overflow-hidden"  >
+                    <div class="svg-card-wrapper">
+                      <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                          <linearGradient id="MyGradient3">
+                                  <stop offset="5%" stop-color="#4158D0"></stop>
+                                  <stop offset="30%" stop-color="#C850C0"></stop>
+                                  <stop offset="66%" stop-color="#ff8e00"></stop>
+                                  <stop offset="100%" stop-color="#ff0a0e"></stop>
+                                </linearGradient>
+                          <g transform="translate(300,300)">
+                            <path d="M145.3,-201.3C177.3,-176.7,184.7,-119.5,199.8,-66.5C214.9,-13.4,237.8,35.6,226.1,74.1C214.5,112.5,168.4,140.4,124.9,162.6C81.5,184.9,40.8,201.4,-5,208.3C-50.7,215.2,-101.5,212.4,-131.1,185.7C-160.8,159,-169.3,108.4,-168.7,65.4C-168,22.5,-158.2,-12.9,-147.4,-48.4C-136.5,-83.9,-124.7,-119.6,-100,-146.6C-75.2,-173.6,-37.6,-191.8,9.5,-204.9C56.6,-217.9,113.2,-225.9,145.3,-201.3Z" fill="url(#MyGradient3)"></path>
+                          </g>
+                          </svg>
+                    </div>
+                    <div class="position-relative d-flex flex-column py-md-2 flex-md-row justify-content-between align-items-center">
+                      <div class="h1 text-center mb-md-0">Start building beautiful websites</div>
+                      <a href="https://blueprintsapp.launchaco.com/" class="shadow btn btn-lg btn-light py-md-3 px-md-5 text-danger font-weight-bold ">
+                        GET WEBSITE GENERATOR NOW >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--  <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                  <a href="#">
+                    <svg class="d-block mb-4" width="36" height="36" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                      <path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path>
+                      <path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path>
+                    </svg>
+                  </a>
+                  <address class="color-light-20">
+                    1600 Amphitheatre Parkway
+                    <br> Mountain View, CA 94043
+                  </address>
+                  <ul class="list-unstyled list-light">
+                    <li>
+                      <a href="#">Disclaimer</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <h4 class="my-2">Product</h4>
+                  <ul class="list-unstyled list-light">
+                    <li>
+                      <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                      <a href="#">Features</a>
+                    </li>
+                    <li>
+                      <a href="#">Customers</a>
+                    </li>
+                    <li>
+                      <a href="#">Store</a>
+                    </li>
+                  </ul>
+                </div>
+                <br style="clear:both" class="hidden-sm-up">
+                <div class="col-xs-6 col-sm-3">
+                  <h4 class="my-2">Company</h4>
+                  <ul class="list-unstyled list-light">
+                    <li>
+                      <a href="#">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#">Careers</a>
+                    </li>
+                    <li>
+                      <a href="#">Press</a>
+                    </li>
+                    <li>
+                      <a href="#">Events</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <h4 class="my-2">Connect</h4>
+                  <ul class="list-unstyled list-light">
+                    <li>
+                      <a href="#">Support</a>
+                    </li>
+                    <li>
+                      <a href="#">Social</a>
+                    </li>
+                    <li>
+                      <a href="#">Community</a>
+                    </li>
+                  </ul>
+                  <p class="color-light mt-2">Stay up-to-date!</p>
+                  <form>
+                    <div class="form-group">
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-sm" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary btn-sm" type="button">Ok</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>-->
+              <hr>
+              <div class="row f-flex justify-content-center" style="">
+                <div class="col text-center  text-secondary my-1">
+                  <p class="mt-2   "> © Copyright 2019 • All Rights Reserved  <a href="https://market.bootstraptor.com" target="_blank">Bootstraptor.com</a> | Illustrations by <a href="https://undraw.co/illustrations" target="_blank">Undraw</a>
+                    <!--<a class=" " href="#">Disclaimer</a> |
+                    <a class=" " href="#">Contact</a>-->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="badge bg-primary badge-cred"><a href="https://blueprintsapp.launchaco.com/" target="_blank" class="text-white">Made w/ Blueprints</a></div>
+
+      <!-- jQuery is required -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <!--<script src="assets/js/app.js"></script>-->
+      <script src="https://gumroad.com/js/gumroad.js"></script>
+      <script>
+        //hero header animation
+        const elems = document.querySelectorAll('.laya-vr');
+        const layer2 = document.querySelector('.layer-1');
+        const layer3 = document.querySelector('.layer-2');
+
+        document.body.addEventListener('mousemove', function (e) {
+            let width = window.innerWidth / 2;
+            let mouseMoved2 = ((width - e.pageX) / 70);
+            let mouseMoved3 = ((width - e.pageY) / 60);
+            layer2.style.transform = "translateY(" + mouseMoved2 + "px)";
+            layer3.style.transform = "translateX(" + mouseMoved3 + "px)";
+        });
+      </script>
+      <script language="JavaScript">
+       var s=document.getElementsByTagName('script')[0];
+       var sc=document.createElement('script');
+       sc.type='text/javascript';
+       sc.async=true;
+       sc.src='assets/js/app.js?v' + Math.random();
+       s.parentNode.insertBefore(sc,s);
+      </script>
+    </body>
+</html>
