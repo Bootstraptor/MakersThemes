@@ -114,7 +114,5 @@ $('.slider-testimonials-1').slick({
       }, stepTime);
     }
 
-    animateValue("value", 1, 2630, 100);
+    animateValue("value", 1, count, 100);
   }
-
-  startWidget();
