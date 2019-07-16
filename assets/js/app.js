@@ -1,6 +1,6 @@
-AOS.init({
-  duration: 1200,
-})
+//AOS.init({
+//  duration: 1200,
+//})
 $('.slider-testimonials-1').slick({
    slidesToShow: 1,
    slidesToScroll: 1,
