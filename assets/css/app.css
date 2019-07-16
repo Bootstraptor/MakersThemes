@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700|Montserrat:100,300,400,700");
+
 .img-center {
   margin-right: auto !important;
   margin-left: auto !important;
@@ -9919,7 +9919,7 @@ button:hover,
 }
 	.card.animated{
     border: 0 !important;
- 
+
     white-space: normal;
     -webkit-transition: all 300ms cubic-bezier(.02, .01, .47, 1);
     -moz-transition: all 300ms cubic-bezier(.02, .01, .47, 1);
